@@ -7,6 +7,7 @@ import Login from './../login/login.js';
 import Register from './../register/register.js';
 
 export default class Header extends Component {
+
     render() {
         return (
             <Fragment>
@@ -57,6 +58,8 @@ export default class Header extends Component {
                                 <h1 className="text-center">
                                     <a href="index.html" className="font-weight-bold font-italic">
                                         <img src={logo2} alt=" " classname="img-fluid" />Electro Store
+                                        {/* <img src='/static/media/logo2.4d19b2af.png' alt=" " classname="img-fluid" />Electro Store */}
+                                        {/* <img src='src/Resource/images/logo2.png' alt=" " classname="img-fluid" />Electro Store */}
                                     </a>
                                 </h1>
                             </div>
@@ -271,7 +274,7 @@ export default class Header extends Component {
                                     <li className="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Pages
-                  </a>
+                                        </a>
                                         <div className="dropdown-menu">
                                             <a className="dropdown-item" href="product.html">Product 1</a>
                                             <a className="dropdown-item" href="product2.html">Product 2</a>
