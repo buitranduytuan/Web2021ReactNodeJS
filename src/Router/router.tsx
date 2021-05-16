@@ -20,7 +20,7 @@ const AppRouter = () => {
             <Route exact path="/products">
                 <ListProduct />
             </Route>
-            <Route exact path="/productdetail">
+            <Route path="/productdetail">
                 <ProductDetail />
             </Route>
         </Switch>

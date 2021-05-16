@@ -1,9 +1,9 @@
-import './App.css';
-import Header from './Components/Layout/header/header.js';
-import Footer from './Components/Layout/footer/footer.js';
+import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import AppRouter from './Router/router.js';
-
+import './App.css';
+import Footer from './Components/Layout/footer/footer';
+import Header from './Components/Layout/header/header';
+import AppRouter from './Router/router';
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
         <Footer />
       </div>
     </Router>
-
   );
 }
 

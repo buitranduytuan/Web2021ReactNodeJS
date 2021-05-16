@@ -56,8 +56,6 @@ export default class Header extends Component {
                                 <h1 className="text-center">
                                     <a href="index.html" className="font-weight-bold font-italic">
                                         <img src="/asset/images/logo2.png" alt=" " className="img-fluid" />Electro Store
-                                        {/* <img src='/static/media/logo2.4d19b2af.png' alt=" " className="img-fluid" />Electro Store */}
-                                        {/* <img src='src/Resource/images/logo2.png' alt=" " className="img-fluid" />Electro Store */}
                                     </a>
                                 </h1>
                             </div>
@@ -79,7 +77,7 @@ export default class Header extends Component {
                                             <form action="#" method="post" className="last">
                                                 <input type="hidden" name="cmd" defaultValue="_cart" />
                                                 <input type="hidden" name="display" defaultValue={1} />
-                                                <button className="btn w3view-cart" type="submit" name="submit" value>
+                                                <button className="btn w3view-cart" type="submit" name="submit">
                                                     <i className="fas fa-cart-arrow-down" />
                                                 </button>
                                             </form>
@@ -98,7 +96,7 @@ export default class Header extends Component {
                             <div className="agileits-navi_search">
                                 <form action="#" method="post">
                                     <select id="agileinfo-nav_search" name="agileinfo_search" className="border" required>
-                                        <option value>All Categories</option>
+                                        <option value='0'>All Categories</option>
                                         <option value="Televisions">Televisions</option>
                                         <option value="Headphones">Headphones</option>
                                         <option value="Computers">Computers</option>
@@ -263,15 +261,25 @@ export default class Header extends Component {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className="nav-item mr-lg-2 mb-lg-0 mb-2">
-                                        <a className="nav-link" href="about.html">About Us</a>
-                                    </li>
-                                    <li className="nav-item mr-lg-2 mb-lg-0 mb-2">
-                                        <a className="nav-link" href="product.html">New Arrivals</a>
-                                    </li>
                                     <li className="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Pages
+                                        </a>
+                                        <div className="dropdown-menu">
+                                            <a className="dropdown-item" href="product.html">Product 1</a>
+                                            <a className="dropdown-item" href="product2.html">Product 2</a>
+                                            <div className="dropdown-divider" />
+                                            <a className="dropdown-item" href="single.html">Single Product 1</a>
+                                            <a className="dropdown-item" href="single2.html">Single Product 2</a>
+                                            <div className="dropdown-divider" />
+                                            <a className="dropdown-item" href="checkout.html">Checkout Page</a>
+                                            <a className="dropdown-item" href="payment.html">Payment Page</a>
+                                        </div>
+                                    </li>
+
+                                    <li className="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+                                        <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Notifications
                                         </a>
                                         <div className="dropdown-menu">
                                             <a className="dropdown-item" href="product.html">Product 1</a>
