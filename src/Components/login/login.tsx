@@ -8,6 +8,7 @@ const schema = yup.object().shape({
   password: yup.string().required('Password không được để trống'),
 });
 
+//Hahahasdfsdfsdfsdfdsfdfdsfsdf
 function Login() {
   const { register, handleSubmit, errors } = useForm({
     mode: 'onBlur',
@@ -18,6 +19,7 @@ function Login() {
     console.log({ data });
   };
 
+  //Helloelloelloelloelloelloelloelloello
   return (
     <div
       className="modal fade"
