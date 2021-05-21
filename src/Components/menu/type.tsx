@@ -11,7 +11,7 @@ export type FilterType = {
   limit?: Number;
 };
 
-export type FilterType222 = {
+export type FilterType223333333 = {
   name?: String;
   brand?: String;
   page: Number;
