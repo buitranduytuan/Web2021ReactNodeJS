@@ -3,12 +3,12 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 
+// Buif Traan Duyt Tuasn
 const schema = yup.object().shape({
   username: yup.string().required('Vui lòng nhập UserName'),
   password: yup.string().required('Password không được để trống'),
 });
 
-//Hahahasdfsdfsdfsdfdsfdfdsfsdf
 function Login() {
   const { register, handleSubmit, errors } = useForm({
     mode: 'onBlur',
@@ -19,7 +19,6 @@ function Login() {
     console.log({ data });
   };
 
-  //Helloelloelloelloelloelloelloelloello
   return (
     <div
       className="modal fade"

@@ -4,7 +4,7 @@ import ListProduct from '../Components/Products/listProduct';
 import Home from '../Components/Home/home';
 import Checkout from '../Components/Checkout/checkout';
 import ProductDetail from '../Components/ProductDetail/productDetail';
-import FormExample from '../Components/Form/formExample';
+import RebassTest from '../Components/Rebass/rebassTest';
 
 const AppRouter = () => {
   return (
@@ -21,8 +21,8 @@ const AppRouter = () => {
       <Route path="/productdetail">
         <ProductDetail />
       </Route>
-      <Route path="/formExample">
-        <FormExample />
+      <Route path="/rebass">
+        <RebassTest />
       </Route>
     </Switch>
   );
