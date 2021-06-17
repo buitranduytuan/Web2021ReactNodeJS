@@ -1,0 +1,19 @@
+:root {
+  --color: red;
+  --fontSize: 15px;
+}
+
+.textColor p {
+  color: var(--color);
+  font-size: var(--fontSize);
+}
+
+.listNumber {
+  border-bottom: 1px dashed #ddd;
+  //   display: flex;
+  flex-direction: row;
+}
+
+.listNumber div:last-child {
+  border-bottom: none !important;
+}

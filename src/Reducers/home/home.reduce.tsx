@@ -1,5 +1,3 @@
-
-
 // const ACTION_TYPE = {
 //     LOADING: "LOADING",
 //     GET_LIST_PRODUCT: "GET_LIST_PRODUCT",
@@ -7,12 +5,15 @@
 // }
 
 const initialState = {
-    loading: false,
-    listProduct: [],
-    content: null,
-}
+  loading: false,
+  listProduct: [],
+  content: null,
+  usename: '',
+};
 
-var homeReducer = () => { return initialState}
+var homeReducer = () => {
+  return initialState;
+};
 // var homeReducer = (state, action) => {
 //     switch (action.type) {
 //         case ACTION_TYPE.LOADING:
@@ -45,7 +46,6 @@ var homeReducer = () => { return initialState}
 // }
 
 export default homeReducer;
-
 
 // export const showNotification = (notification) => {
 //     return ({

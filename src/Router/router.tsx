@@ -5,6 +5,7 @@ import Home from '../Components/Home/home';
 import Checkout from '../Components/Checkout/checkout';
 import ProductDetail from '../Components/ProductDetail/productDetail';
 import RebassTest from '../Components/Rebass/rebassTest';
+import LearnCSS from '../Components/LearnCSS/learn';
 
 const AppRouter = () => {
   return (
@@ -23,6 +24,9 @@ const AppRouter = () => {
       </Route>
       <Route path="/rebass">
         <RebassTest />
+      </Route>
+      <Route path="/learnCss">
+        <LearnCSS />
       </Route>
     </Switch>
   );

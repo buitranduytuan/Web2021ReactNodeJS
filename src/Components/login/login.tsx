@@ -1,7 +1,8 @@
 import { yupResolver } from '@hookform/resolvers/yup';
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
+import TestClick from './testClick';
 
 // Buif Traan Duyt Tuasn
 const schema = yup.object().shape({
@@ -15,8 +16,36 @@ function Login() {
     resolver: yupResolver(schema),
   });
 
+  const [name, setName] = useState('');
+
+  const dataSubmit = {
+    a: 'a',
+    b: 'b',
+    c: 'c',
+  };
+
+  const xxx: Array<{ name: string; value: string }> = [];
+
+  Object.entries(dataSubmit).forEach(([key, value]) => {
+    xxx.push({
+      name: key,
+      value: value,
+    });
+  });
+
+  const setNameFunc = (nameVl: string) => {
+    console.log('111');
+    setName(nameVl);
+  };
+
+  const element = [];
+  element.push(<p>123213</p>);
+  element.push(<p>123214</p>);
+  element.push(<p>123215</p>);
+
   const onSubmit = (data: any) => {
-    console.log({ data });
+    console.log('222');
+    console.log({ ...data, nameTT: name });
   };
 
   return (
@@ -43,7 +72,13 @@ function Login() {
           <div className="modal-body">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
-                <label className="col-form-label">Username</label>
+                <label className="col-form-label" key={123}>
+                  Username
+                </label>
+                {Object.entries(element).map(([, el]) => (
+                  <Fragment key={Math.random()}>{el}</Fragment>
+                ))}
+                <TestClick func={setNameFunc} />
                 <input
                   type="text"
                   className="form-control"
